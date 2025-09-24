@@ -1,0 +1,1 @@
+package com.sportsinfo.common; public record ApiResponse<T>(boolean success, String message, T data){ public static <T> ApiResponse<T> ok(T d){return new ApiResponse<>(true,null,d);} public static <T> ApiResponse<T> msg(String m){return new ApiResponse<>(true,m,null);} public static <T> ApiResponse<T> error(String m){return new ApiResponse<>(false,m,null);} }

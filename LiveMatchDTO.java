@@ -1,0 +1,1 @@
+package com.sportsinfo.common; import java.time.OffsetDateTime; import java.util.Map; public record LiveMatchDTO(String sport,String league,String homeTeam,String awayTeam,String status,String score,OffsetDateTime startTime,Map<String,Object> stats) {}

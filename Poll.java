@@ -1,0 +1,1 @@
+package com.sportsinfo.community; import jakarta.persistence.*; import lombok.*; @Entity @Table(name="polls") @Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder public class Poll { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) private Long id; private String sport; private String question; private String optionsCsv; }

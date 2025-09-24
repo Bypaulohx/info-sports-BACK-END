@@ -1,0 +1,1 @@
+package com.sportsinfo.common; import java.util.List; public record LeagueTableDTO(String league, java.util.List<Row> rows){ public record Row(int position,String team,int played,int won,int draw,int lost,int points){} }
